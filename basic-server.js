@@ -23,6 +23,10 @@ var requestRouter = function (request, response) {
     if (request.method === 'POST') {
       handler.messageHandler(request, response);
     }
+
+    if (request.method === 'GET') {
+      handler.sendMessageHandler(request, response);
+    }
   }
 
   response.end("Hello, Blake!");
