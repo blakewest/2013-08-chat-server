@@ -1,6 +1,7 @@
 var storage = require('./storage.js').storage;
 var url = require('url');
 var http = require("http");
+var fs = require('fs');
 
 var responseHeaders = {
     'Content-Type': 'text/plain',
